@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Шипачева](https://up.htmlacademy.ru/adaptive/8/user/183375).
-* Наставник: `Неизвестно`.
+* Наставник: `Антон Попов` (https://htmlacademy.ru/profile/joker).
 
 ---
 
