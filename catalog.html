@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="#" width="" height="" alt="Мишка">
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <header class="catalog-header">
+        <h1 class="catalog-header__title">Каталог товаров</h1>
+      </header>
+      <section class="catalog-items">
+        <article class="catalog-item">
+          <figure class="catalog-item__photo">
+            <img src="#" width="" height="" alt="Зайчик-попрыгайчик">
+          </figure>
+          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          <p>Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__parameter">
+            <b class="catalog-item__price">1200 руб.</b>
+            <span class="catalog-item__cart-icon"></span>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <figure class="catalog-item__photo">
+            <img src="#" width="" height="" alt="Корзинка для белья">
+          </figure>
+          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <p>Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__parameter">
+            <b class="catalog-item__price">690 руб.</b>
+            <span class="catalog-item__cart-icon"></span>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <figure class="catalog-item__photo">
+            <img src="#" width="" height="" alt="Большая корзинка для игрушек">
+          </figure>
+          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          <p>Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-item__parameter">
+            <b class="catalog-item__price">1500 руб.</b>
+            <span class="catalog-item__cart-icon"></span>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <h2 class="catalog-item__title">Процесс производства</h2>
+          <video src="#"></video>
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары</p>
+          <a href="#" class="catalog-item__make-order  btn">Сделать заказ</a>
+        </article>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__social">
+          <span class="social-links">
+            <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+            <a href="#" class="social-link  social-link__insta">Инстаграм</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-link  social-link__fb">Фейсбук</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-link  social-link__tw">Твиттер</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">
+          Разработано
+          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
+        </p>
+      </div>
+    </footer>
+    <section class="modal-content">
+      <div class="modal-content__wrapper">
+        <h3 class="modal-content__title">Добавить в корзину</h3>
+        <p>Выберите размер:</p>
+        <button class="modal-content__size-btn  btn" type="button">S</button>
+        <button class="modal-content__size-btn  btn" type="button">M</button>
+        <button class="modal-content__size-btn  btn" type="button">L</button>
+        <button class="modal-content__btn  btn" type="submit">Добавить</button>
+      </div>
+    </section>
+  </body>
+</html>

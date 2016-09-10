@@ -5,8 +5,159 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="visually-hidden">Мишка</h1>
+      <div class="page-header__logo">
+        <img src="#" width="" height="" alt="Мишка">
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="categories">
+        <h2 class="categories__title">Милые штуки ручной работы для дома</h2>
+        <article class="categories__item">
+          <h4 class="categories__item-title">Предметы интерьера</h4>
+          <span class="categories__item-icon"></span>
+        </article>
+        <article class="categories__item">
+          <h4 class="categories__item-title">Детские игрушки</h4>
+          <span class="categories__item-icon"></span>
+        </article>
+      </section>
+      <section class="popular-good">
+        <div class="popular-good__wrapper">
+          <h3 class="popular-good__title">Вязаные корзинки</h3>
+          <b class="popular-good__tagline">Товар недели</b>
+          <p class="popular-good__intro">Экологически чистая пряжа, ручная работа. Доступны
+          в шести расцветках, и трех размерах.</p>
+          <table class="popular-good__table">
+            <tr>
+              <td class="popular-good__description">Цвет:</td>
+              <td class="popular-good__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="popular-good__description">Диаметр:</td>
+              <td class="popular-good__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="popular-good__description">Высота:</td>
+              <td class="popular-good__value">15 см</td>
+            </tr>
+          </table>
+          <figure class="popular-good__photo">
+            <img src="#" width="" height="" alt="Вязаные корзинки">
+          </figure>
+          <b class="popular-good__price">Цена: 990 руб.</b>
+          <a href="#" class="popular-good__make-order  btn">Заказать</a>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h3 class="advantages__title">Коротко о нас:</h3>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <span class="advantages__item-icon"></span>
+              <h5 class="advantages__item-title">Экологически чистые материалы</h5>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__item-icon"></span>
+              <h5 class="advantages__item-title">Скандинавский стиль по российской цене</h5>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__item-icon"></span>
+              <h5 class="advantages__item-title">Увеличивает лайки на фотографиях</h5>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__item-icon"></span>
+              <h5 class="advantages__item-title">Связано вручную с любовью и умилением</h5>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__item-icon"></span>
+              <h5 class="advantages__item-title">Поддержка отечественного производителя</h5>
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__item-icon"></span>
+              <h5 class="advantages__item-title">Поставляется в подарочной упаковке</h5>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper  slider">
+          <h3 class="reviews__title">Отзывы</h3>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+          <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+          <div class="reviews__items">
+            <blockquote class="reviews__item  slider__item">
+              <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+              как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои
+              фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+              <cite class="reviews__author-name">Анастасия Красильникова</cite>
+              <i class="reviews__author-email">@misssssiskras</i>
+            </blockquote>
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <div class="reviews__toggles  slider__toggles">
+            <label for="reviews-input-1" class="slider__toggle"></label>
+            <label for="reviews-input-2" class="slider__toggle"></label>
+          </div>
+          <a href="#" class="reviews__write-review  btn">Написать</a>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h5 class="contacts__title">Контакты</h5>
+          <table class="contacts__table">
+           <tr>
+             <td class="contacts__name">e-mail:</td>
+             <td class="contacts__field">info@mimimishkashop.ru</td>
+           </tr>
+           <tr>
+             <td class="contacts__name">адрес:</td>
+             <td class="contacts__field">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д.19/8, офис 101</td>
+           </tr>
+          </table>
+          <div class="contacts__map"></div>
+          <a href="#" class="contacts__write-to-us  btn">Напишите нам</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__social">
+          <span class="social-links">
+            <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+            <a href="#" class="social-link  social-link__insta">Инстаграм</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-link  social-link__fb">Фейсбук</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-link  social-link__tw">Твиттер</a>
+          </span>
+        </p>
+        <p class="page-footer__copyright">
+          Разработано
+          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
+        </p>
+      </div>
+    </footer>
+    <section class="modal-content">
+      <div class="modal-content__wrapper">
+        <h3 class="modal-content__title">Добавить в корзину</h3>
+        <p>Выберите размер:</p>
+        <button class="modal-content__size-btn  btn" type="button">S</button>
+        <button class="modal-content__size-btn  btn" type="button">M</button>
+        <button class="modal-content__size-btn  btn" type="button">L</button>
+        <button class="modal-content__btn  btn" type="submit">Добавить</button>
+      </div>
+    </section>
   </body>
 </html>
