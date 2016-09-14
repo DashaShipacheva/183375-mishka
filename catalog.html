@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="logo">
+        <a href="#"><img src="#" width="" height="" alt="Mishka"></a>
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-wrapper">
+        <h1 class="header-wrapper__title">Каталог товаров</h1>
+      </div>
+    </header>
+    <main>
+      <section class="catalog-items">
+        <article class="catalog-item">
+          <figure class="catalog-item__photo">
+            <img src="#" width="" height="" alt="Зайчик-попрыгайчик">
+          </figure>
+          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          <p>Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__parameter">
+            <b class="catalog-item__price">1200 руб.</b>
+            <a class="catalog-item__cart-icon" href="#">Заказать</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <figure class="catalog-item__photo">
+            <img src="#" width="" height="" alt="Корзинка для белья">
+          </figure>
+          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <p>Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__parameter">
+            <b class="catalog-item__price">690 руб.</b>
+            <a class="catalog-item__cart-icon" href="#">Заказать</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <figure class="catalog-item__photo">
+            <img src="#" width="" height="" alt="Большая корзинка для игрушек">
+          </figure>
+          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          <p>Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-item__parameter">
+            <b class="catalog-item__price">1500 руб.</b>
+            <a class="catalog-item__cart-icon" href="#">Заказать</a>
+          </div>
+        </article>
+        <article class="catalog-item">
+          <h2 class="catalog-item__title  catalog-item__title--icon">Процесс производства</h2>
+          <video src="#"></video>
+          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары</p>
+          <a class="btn" href="#">Сделать заказ</a>
+        </article>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <article class="social-links">
+          <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
+            <a href="#" class="social-link  social-link__insta">Инстаграм</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-link  social-link__fb">Фейсбук</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-link  social-link__tw">Твиттер</a>
+        </article>
+        <article class="page-footer__copyright">
+          Разработано
+          <a class="page-footer__copyright-link" href="#">HTML Academy</a>
+        </article>
+      </div>
+    </footer>
+    <section class="modal-content">
+      <h3 class="modal-content__title">Добавить в корзину</h3>
+      <p>Выберите размер:</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="form__input" type="checkbox" name="small" id="size-1" checked>
+        <label class="form__label" for="size-1">S</label>
+        <input class="form__input" type="checkbox" name="medium" id="size-2">
+        <label class="form__label" for="size-2">M</label>
+        <input class="form__input" type="checkbox" name="large" id="size-3">
+        <label class="form__label" for="size-3">L</label>
+        <button class="btn  btn--green" type="submit">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
