@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="logo">
-        <a href="#"><img src="#" width="" height="" alt="Mishka"></a>
-      </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="wrapper">
+      <div class="wrapper">
+        <div class="logo">
+          <a><img src="#" width="" height="" alt="Mishka"></a>
+        </div>
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <div class="header-wrapper">
         <h1 class="header-wrapper__title">Вязание на заказ</h1>
       </div>
     </header>
-    <main>
+    <main class="wrapper">
       <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами,
       чтобы уточнить детали.</p>
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
