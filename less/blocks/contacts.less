@@ -1,3 +1,40 @@
 .contacts {
   outline: 2px solid brown;
+  padding-top: 40px;
+}
+
+.contacts__wrapper {
+  .container();
+
+  padding-bottom: 39px;
+}
+
+@media @tablet-widths {
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 55px;
+  }
+
+  .contacts__table {
+    display: flex;
+
+    tr {
+    flex: 50%;
+    }
+  }
+
+}
+
+@media @desktop-widths {
+
+  .contacts__wrapper {
+    padding-bottom: 105px;
+  }
+
+  .contacts__table {
+    flex-direction: column;
+  }
+
 }

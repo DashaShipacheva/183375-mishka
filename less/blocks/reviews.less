@@ -1,3 +1,41 @@
 .reviews {
   outline: 2px solid yellow;
+  padding-top: 1px;
+}
+
+.reviews__wrapper {
+  .container();
+  padding-bottom: 43px;
+}
+
+.reviews__item {
+    margin-left: 0;
+  }
+
+@media @tablet-widths {
+
+  .reviews__wrapper {
+    position: relative;
+
+    padding-top: 80px;
+    min-height: 460px;
+  }
+
+  .reviews__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .reviews__toggle {
+    margin-top: -45px;
+    margin-left: auto;
+  }
+
+}
+
+@media @desktop-widths {
+
+
 }

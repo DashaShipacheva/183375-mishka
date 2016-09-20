@@ -1,3 +1,47 @@
 .popular-good {
   outline: 1px solid orange;
 }
+
+.popular-good__wrapper {
+  .container();
+
+  min-height: 820px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+@media @tablet-widths {
+
+  .popular-good__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 605px;
+    padding-top: 50px;
+    padding-bottom: 51px;
+  }
+
+  .popular-good__tagline {
+    margin-left: auto;
+    margin-top: -40px;
+  }
+
+  .popular-good__photo {
+    margin-left: auto;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .popular-good__title {
+    margin-left: 175px;
+  }
+
+  .popular-good__tagline {
+    margin-top: -50px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+}

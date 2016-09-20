@@ -1,5 +1,63 @@
 .categories {
-  background: @categories-bg-color url("../img/hero-mobile@1x.jpg") no-repeat;
+  background: @categories-bg-color url("../img/hero-mobile@1x.jpg") no-repeat center center;
   outline: 1px solid red;
+  min-height: 489px;
+
+  position: relative;
+  z-index: -1;
+
+  margin-top: -316px;
+}
+
+.categories__title {
+  margin-top: 145px;
+  margin-bottom: 115px;
+
+  text-align: center;
+}
+
+@media @tablet-widths {
+
+  .categories {
+    padding-top: 20px;
+    margin-top: -160px;
+    min-height: 750px;
+  }
+
+  .categories__wrapper {
+    .container();
+    .clearfix();
+
+    font-size: 0;
+  }
+
+  .categories__title {
+    margin-bottom: 360px;
+
+    font-size: 43px;
+  }
+
+  .categories__item {
+    display: inline-block;
+    width: 50%;
+
+    font-size: 20px;
+
+    vertical-align: top;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .categoties {
+    margin-top: -155px;
+    min-height: 745px;
+  }
+
+  .categories__title {
+    margin-bottom: 345px;
+  }
+
 }
 

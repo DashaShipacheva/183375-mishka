@@ -1,4 +1,29 @@
 .header-wrapper {
-  background-color: @page-footer-bg-color;
+  margin-top: -250px;
+  margin-bottom: 30px;
   padding: 0 25px;
+  padding-top: 75px;
+  min-height: 175px;
+
+  background-color: @bg-color;
+}
+
+.header-wrapper__title {
+  text-align: center;
+}
+
+@media @tablet-widths {
+
+  .header-wrapper {
+    margin-top: -60px;
+  }
+
+  .header-wrapper__title {
+    margin-bottom: 83px;
+  }
+}
+
+@media @desktop-widths {
+  margin-bottom: 129px;
+
 }

@@ -8,7 +8,7 @@
 @import "blocks/page-header.less";
 @import "blocks/logo.less";
 @import "blocks/main-nav.less";
-@import "blocks/wrapper.less";
+@import "blocks/main-wrapper.less";
 @import "blocks/visually-hidden.less";
 @import "blocks/categories.less";
 @import "blocks/popular-good.less";
@@ -25,13 +25,22 @@
 @import "blocks/catalog-item.less";
 @import "blocks/catalog-items.less";
 @import "blocks/order-form.less";
+@import "blocks/page-footer-logo.less";
+@import "blocks/inner-page.less";
 
 body {
+  min-width: 320px;
+
   font-family: "Opensans", "Arial", sans-serif;
-  font-weight: @font-weight;
-  font-size: @font-size;
-  line-height: @line-height;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
   color: @body-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 
