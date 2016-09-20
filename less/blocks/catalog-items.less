@@ -1,3 +1,15 @@
 .catalog-items {
   outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media @desktop-widths {
+
+  .catalog-items {
+    margin-bottom: 105px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

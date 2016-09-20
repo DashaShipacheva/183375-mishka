@@ -1,4 +1,25 @@
 .page-footer {
-  background-color: @page-footer-bg-color;
+  background-color: @bg-color;
   outline: 1px solid blue;
+}
+
+.page-footer__wrapper {
+  .container();
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 160px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+@media @tablet-widths {
+
+  .page-footer__wrapper {
+    justify-content: space-between;
+
+    padding-top: 50px;
+    min-height: 140px;
+  }
+
 }

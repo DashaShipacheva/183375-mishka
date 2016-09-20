@@ -4,37 +4,46 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
   </head>
   <body>
     <header class="page-header">
-      <div class="wrapper">
-        <h1 class="visually-hidden">Мишка</h1>
-        <div class="logo">
-          <a><img src="#" width="" height="" alt="Mishka"></a>
-        </div>
-        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <h1 class="visually-hidden">Мишка</h1>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <div class="main-nav__wrapper">
+          <a class="logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
           <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__list--1">
             <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--2">
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
           </ul>
-        </nav>
-      </div>
+          <ul class="main-nav__list  main-nav__list--3">
+            <li class="main-nav__item  main-nav__item--new-goods"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item  main-nav__item--sale"><a href="#">Распродажа</a></li>
+            <li class="main-nav__item  main-nav__item--delivery"><a href="#">Бесплатная доставка по России</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="categories">
-        <h2 class="categories__title">Милые штуки ручной работы для дома</h2>
-        <article class="categories__item  categories__item--interior-icon">
-          <h4 class="categories__item-title">Предметы интерьера</h4>
-        </article>
-        <article class="categories__item  categories__item--toy-icon">
-          <h4 class="categories__item-title">Детские игрушки</h4>
-        </article>
+        <div class="categories__wrapper">
+          <h2 class="categories__title">Милые штуки ручной работы для дома</h2>
+          <a href="#"><article class="categories__item  categories__item--interior-icon">
+            <h4 class="categories__item-title">Предметы интерьера</h4>
+          </article></a>
+          <a href="#"><article class="categories__item  categories__item--toy-icon">
+            <h4 class="categories__item-title">Детские игрушки</h4>
+          </article></a>
+        </div>
       </section>
       <section class="popular-good">
-        <div class="wrapper">
+        <div class="popular-good__wrapper">
           <h3 class="popular-good__title">Вязаные корзинки</h3>
           <p class="popular-good__tagline">Товар недели</p>
           <p class="popular-good__intro">Экологически чистая пряжа, ручная работа. Доступны
@@ -61,7 +70,7 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="wrapper">
+        <div class="advantages__wrapper">
           <h3 class="advantages__title">Коротко о нас:</h3>
           <ul class="advantages__list">
             <li class="advantages__item  advantages__item--flower">Экологически чистые материалы</li>
@@ -74,7 +83,7 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="wrapper">
+        <div class="reviews__wrapper">
           <h3 class="reviews__title">Отзывы</h3>
           <div class="reviews__items">
             <blockquote class="reviews__item">
@@ -84,14 +93,16 @@
               <cite class="reviews__author-name">Анастасия Красильникова</cite>
               <i class="reviews__author-email">@misssssiskras</i>
             </blockquote>
-            <a class="reviews__prev" href="#">Предыдущий отзыв</a>
-            <a class="reviews__next" href="#">Следующий отзыв</a>
+            <div class="reviews__toggle">
+              <a class="reviews__prev" href="#">Предыдущий отзыв</a>
+              <a class="reviews__next" href="#">Следующий отзыв</a>
+            </div>
           </div>
-          <a class="btn" href="#">Написать</a>
+          <a class="btn  btn--top" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
-        <div class="wrapper">
+        <div class="contacts__wrapper">
           <h5 class="contacts__title">Контакты</h5>
           <table class="contacts__table">
             <tr>
@@ -104,12 +115,13 @@
             </tr>
           </table>
           <div class="contacts__map"></div>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="btn  btn--center" href="#">Напишите нам</a>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="page-footer__wrapper">
+        <a class="page-footer-logo" href="">Mishka</a>
         <article class="social-links">
           <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
             <a href="#" class="social-link  social-link__insta">Инстаграм</a><span class="visually-hidden">,</span>
@@ -135,5 +147,21 @@
         <button class="btn  btn--green" type="submit">Добавить</button>
       </form>
     </section>
+    <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+    </script>
   </body>
 </html>
