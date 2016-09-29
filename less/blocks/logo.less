@@ -1,23 +1,42 @@
 .logo {
   display: block;
   height: 35px;
-  padding-bottom: 8%;
+  padding: 22px 0;
 
   text-align: center;
 
-  border-bottom: @border-bottom;
+  border-bottom: @border;
+
+  img {
+    height: 35px;
+    width: 86px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.logo img {
-  height: 35px;
-  width: 86px;
-}
 
 @media @tablet-widths {
 
   .logo {
     order: -3;
     margin-right: auto;
+    padding: 22px 0 30px;
+
+    text-align: left;
+
+    border-bottom: none;
+
+    img {
+      height: 46px;
+      width: 113px;
+    }
   }
 
 }
@@ -26,9 +45,9 @@
 
   .logo {
     order: -2;
-    flex: 15%;
-    margin: 0 10px;
+    margin-left: 7.142857%;
 
+    text-align: center;
   }
 
 }

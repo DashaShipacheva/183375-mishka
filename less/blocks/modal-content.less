@@ -1,0 +1,76 @@
+.modal-content {
+  .container();
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 46px;
+
+  background-color: #ffffff;
+  border-top: 1px solid #c7c7c7;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  p {
+    margin: 0;
+    margin-bottom: 23px;
+
+    text-align: center;
+  }
+}
+
+.modal-content__title {
+  margin: 0;
+  margin: 0 20%;
+  margin-bottom: 12px;
+
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: @title-color;
+}
+
+.form__controls {
+  margin-bottom: 32px;
+
+  font-size: 0;
+}
+
+.form__controls label {
+  display: inline-block;
+  width: 31.538%;
+  margin-right: 2.692%;
+  padding: 16px 0;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  border: 2px solid #ececec;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form__input {
+  display: none;
+}
+
+#size-1:checked ~ .form__controls label[for="size-1"],
+#size-2:checked ~ .form__controls label[for="size-2"],
+#size-3:checked ~ .form__controls label[for="size-3"] {
+  border: 2px solid #63d1bb;
+}
