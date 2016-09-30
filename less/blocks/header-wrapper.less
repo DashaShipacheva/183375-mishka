@@ -1,29 +1,44 @@
 .header-wrapper {
-  margin-top: -250px;
   margin-bottom: 30px;
-  padding: 0 25px;
-  padding-top: 75px;
-  min-height: 175px;
+  padding: 72px 0 74px;
 
   background-color: @bg-color;
 }
 
 .header-wrapper__title {
+  margin: 0;
+
+  font-size: 27px;
+  font-weight: 700;
   text-align: center;
+
+  color: @title-color;
 }
 
 @media @tablet-widths {
 
   .header-wrapper {
-    margin-top: -60px;
+    padding-top: 94px;
+    padding-bottom: 80px;
+    margin-bottom: 79px;
   }
 
   .header-wrapper__title {
-    margin-bottom: 83px;
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 
 @media @desktop-widths {
-  margin-bottom: 129px;
+
+  .header-wrapper {
+    padding-bottom: 101px;
+    margin-bottom: 130px;
+  }
+
+  .header-wrapper__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 
 }

@@ -11,12 +11,12 @@
     <header class="page-header">
       <h1 class="visually-hidden">Мишка</h1>
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <a class="logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list  main-nav__list--1">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item  main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item  main-nav__item--form"><a href="form.html">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list  main-nav__list--2">
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -33,19 +33,17 @@
     <main>
       <section class="categories">
         <div class="categories__wrapper">
-          <h2 class="categories__title">Милые штуки ручной работы для дома</h2>
-          <a href="#"><article class="categories__item  categories__item--interior-icon">
-            <h4 class="categories__item-title">Предметы интерьера</h4>
-          </article></a>
-          <a href="#"><article class="categories__item  categories__item--toy-icon">
-            <h4 class="categories__item-title">Детские игрушки</h4>
-          </article></a>
+          <h2 class="categories__title">Милые штуки ручной<br> работы для дома</h2>
+          <a class="categories__item  categories__item--interior-icon" href="interior.html">Предметы<br> интерьера</a>
+          <a class="categories__item  categories__item--toy-icon" href="toys.html">Детские<br> игрушки</a>
         </div>
       </section>
       <section class="popular-good">
         <div class="popular-good__wrapper">
-          <h3 class="popular-good__title">Вязаные корзинки</h3>
-          <p class="popular-good__tagline">Товар недели</p>
+          <div class="popular-good__header">
+            <h3 class="popular-good__title">Вязаные корзинки</h3>
+            <p class="popular-good__tagline">Товар недели</p>
+          </div>
           <p class="popular-good__intro">Экологически чистая пряжа, ручная работа. Доступны
           в шести расцветках, и трех размерах.</p>
           <table class="popular-good__table">
@@ -63,22 +61,22 @@
             </tr>
           </table>
           <figure class="popular-good__photo">
-            <img src="#" width="" height="" alt="Вязаные корзинки">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
           </figure>
           <p class="popular-good__price">Цена: 990 руб.</p>
-          <a class="btn" href="#">Заказать</a>
+          <a class="btn" href="good.html">Заказать</a>
         </div>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h3 class="advantages__title">Коротко о нас:</h3>
           <ul class="advantages__list">
-            <li class="advantages__item  advantages__item--flower">Экологически чистые материалы</li>
-            <li class="advantages__item  advantages__item--rectangle">Скандинавский стиль по российской цене</li>
-            <li class="advantages__item  advantages__item--heart">Увеличивает лайки на фотографиях</li>
-            <li class="advantages__item  advantages__item--clew">Связано вручную с любовью и умилением</li>
-            <li class="advantages__item  advantages__item--rocket">Поддержка отечественного производителя</li>
-            <li class="advantages__item  advantages__item--gift">Поставляется в подарочной упаковке</li>
+            <li class="advantages__item  advantages__item--flower">Экологически<br> чистые материалы</li>
+            <li class="advantages__item  advantages__item--rectangle">Скандинавский стиль<br> по российской цене</li>
+            <li class="advantages__item  advantages__item--heart">Увеличивает лайки<br> на фотографиях</li>
+            <li class="advantages__item  advantages__item--clew">Связано вручную с<br> любовью и умилением</li>
+            <li class="advantages__item  advantages__item--rocket">Поддержка отечественного<br> производителя</li>
+            <li class="advantages__item  advantages__item--gift">Поставляется в<br> подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -88,50 +86,54 @@
           <div class="reviews__items">
             <blockquote class="reviews__item">
               <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-              как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
               фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <i class="reviews__author-email">@misssssiskras</i>
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                <i class="reviews__author-email">@misssssiskras</i>
+              </div>
+              <div class="reviews__toggle">
+                <a class="reviews__prev" href="#">Предыдущий отзыв</a>
+                <a class="reviews__next" href="#">Следующий отзыв</a>
+              </div>
             </blockquote>
-            <div class="reviews__toggle">
-              <a class="reviews__prev" href="#">Предыдущий отзыв</a>
-              <a class="reviews__next" href="#">Следующий отзыв</a>
-            </div>
           </div>
-          <a class="btn  btn--top" href="#">Написать</a>
+          <a class="btn  btn--top" href="review.html">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h5 class="contacts__title">Контакты</h5>
+          <h4 class="contacts__title">Контакты</h4>
           <table class="contacts__table">
             <tr>
               <td class="contacts__name">e-mail:</td>
-              <td class="contacts__field">info@mimimishkashop.ru</td>
+              <td class="contacts__field"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
             </tr>
             <tr>
               <td class="contacts__name">адрес:</td>
               <td class="contacts__field">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д.19/8, офис 101</td>
             </tr>
           </table>
-          <div class="contacts__map"></div>
-          <a class="btn  btn--center" href="#">Напишите нам</a>
+        </div>
+        <div class="contacts__map">
+          <div class="contacts__map-pin">Место на карте</div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.297203870707!2d30.32111141481778!3d59.938872109720236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1474541833639" width="100%" height="457" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contacts__btn-wrapper">
+          <a class="btn  btn--center" href="write-us.html">Напишите нам</a>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer-logo" href="">Mishka</a>
+        <a class="page-footer-logo">Mishka</a>
         <article class="social-links">
           <span class="visually-hidden">Подписывайтесь на нас в соцсетях:</span>
             <a href="#" class="social-link  social-link__insta">Инстаграм</a><span class="visually-hidden">,</span>
             <a href="#" class="social-link  social-link__fb">Фейсбук</a><span class="visually-hidden">,</span>
             <a href="#" class="social-link  social-link__tw">Твиттер</a>
         </article>
-        <article class="page-footer__copyright">
-          Разработано
-          <a class="page-footer__copyright-link" href="#">HTML Academy</a>
-        </article>
+        <a class="page-footer__copyright" href="#">Разработано</a>
       </div>
     </footer>
     <section class="modal-content">
@@ -139,27 +141,30 @@
       <p>Выберите размер:</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <input class="form__input" type="checkbox" name="small" id="size-1" checked>
-        <label class="form__label" for="size-1">S</label>
         <input class="form__input" type="checkbox" name="medium" id="size-2">
-        <label class="form__label" for="size-2">M</label>
         <input class="form__input" type="checkbox" name="large" id="size-3">
-        <label class="form__label" for="size-3">L</label>
+        <div class="form__controls">
+          <label for="size-1">S</label>
+          <label for="size-2">M</label>
+          <label for="size-3">L</label>
+        </div>
         <button class="btn  btn--green" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="modal-overlay"></div>
     <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
+    var navMain = document.querySelector(".main-nav");
+    var navToggle = document.querySelector(".main-nav__toggle");
 
-    navMain.classList.remove('main-nav--nojs');
+    navMain.classList.remove("main-nav--nojs");
 
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
+    navToggle.addEventListener("click", function() {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
       } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
       }
     });
     </script>

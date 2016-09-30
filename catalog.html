@@ -10,12 +10,12 @@
   <body>
     <header class="page-header">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <a class="logo" href="#"><img src="#" width="" height="" alt="Mishka"></a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <a class="logo" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
           <ul class="main-nav__list  main-nav__list--1">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item  main-nav__item--catalog"><a>Каталог товаров</a></li>
+            <li class="main-nav__item  main-nav__item--form"><a href="form.html">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list  main-nav__list--2">
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -28,57 +28,57 @@
           </ul>
         </div>
       </nav>
+    </header>
+    <main>
       <div class="header-wrapper">
         <h1 class="header-wrapper__title">Каталог товаров</h1>
       </div>
-    </header>
-    <main class="main-wrapper">
       <section class="catalog-items">
         <article class="catalog-item">
           <figure class="catalog-item__photo">
-            <a href="#"><img src="#" width="" height="" alt="Зайчик-попрыгайчик"></a>
+            <a href="hare-toy.html"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
           </figure>
           <div class="catalog-item__content">
-            <a href="#"><h2 class="catalog-item__title">Зайчик-попрыгайчик</h2></a>
+            <a class="catalog-item__title" href="hare-toy.html"><h2>Зайчик-попрыгайчик</h2></a>
             <p>Рост 30 см, вес 200 г</p>
             <div class="catalog-item__parameter">
-              <b class="catalog-item__price">1200 руб.</b>
-              <a class="catalog-item__cart-icon" href="#">Заказать</a>
+              <b class="catalog-item__price">1 200 руб.</b>
+              <a class="catalog-item__cart-icon" href="hare-toy.html">Заказать</a>
             </div>
           </div>
         </article>
         <article class="catalog-item">
           <figure class="catalog-item__photo">
-            <a href="#"><img src="#" width="" height="" alt="Корзинка для белья"></a>
+            <a href="flasket.html"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
           </figure>
           <div class="catalog-item__content">
-            <a href="#"><h2 class="catalog-item__title">Корзинка для белья</h2></a>
+            <a class="catalog-item__title" href="flasket.html"><h2>Корзинка для белья</h2></a>
             <p>Диаметр 15 см, высота 10 см</p>
             <div class="catalog-item__parameter">
               <b class="catalog-item__price">690 руб.</b>
-              <a class="catalog-item__cart-icon" href="#">Заказать</a>
+              <a class="catalog-item__cart-icon" href="flasket.html">Заказать</a>
             </div>
           </div>
         </article>
         <article class="catalog-item">
           <figure class="catalog-item__photo">
-            <a href="#"><img src="#" width="" height="" alt="Большая корзинка для игрушек"></a>
+            <a href="big-basket.html"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
           </figure>
           <div class="catalog-item__content">
-            <a href="#"><h2 class="catalog-item__title">Большая корзинка для игрушек</h2></a>
+            <a class="catalog-item__title  catalog-item__title--less" href="big-basket.html"><h2>Большая корзинка для игрушек</h2></a>
             <p>Диаметр 30 см, высота 30 см</p>
             <div class="catalog-item__parameter">
-              <b class="catalog-item__price">1500 руб.</b>
-              <a class="catalog-item__cart-icon" href="#">Заказать</a>
+              <b class="catalog-item__price">1 500 руб.</b>
+              <a class="catalog-item__cart-icon" href="big-basket.html">Заказать</a>
             </div>
           </div>
         </article>
-        <article class="catalog-item">
-          <h2 class="catalog-item__title  catalog-item__title--icon">Процесс производства</h2>
-          <video class="catalog-item__video" src="#"></video>
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары</p>
-          <a class="btn" href="#">Сделать заказ</a>
+        <article class="catalog-item  catalog-item--video-item">
+          <h2 class="catalog-item__title-video">Процесс производства</h2>
+          <video class="catalog-item__video" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
+          <p class="catalog-item__intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.</p>
+          <a class="btn  btn--video" href="#">Сделать заказ</a>
         </article>
       </section>
     </main>
@@ -91,10 +91,7 @@
             <a href="#" class="social-link  social-link__fb">Фейсбук</a><span class="visually-hidden">,</span>
             <a href="#" class="social-link  social-link__tw">Твиттер</a>
         </article>
-        <article class="page-footer__copyright">
-          Разработано
-          <a class="page-footer__copyright-link" href="#">HTML Academy</a>
-        </article>
+        <a class="page-footer__copyright" href="#">Разработано</a>
       </div>
     </footer>
     <section class="modal-content">
@@ -102,13 +99,32 @@
       <p>Выберите размер:</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <input class="form__input" type="checkbox" name="small" id="size-1" checked>
-        <label class="form__label" for="size-1">S</label>
         <input class="form__input" type="checkbox" name="medium" id="size-2">
-        <label class="form__label" for="size-2">M</label>
         <input class="form__input" type="checkbox" name="large" id="size-3">
-        <label class="form__label" for="size-3">L</label>
+        <div class="form__controls">
+          <label for="size-1">S</label>
+          <label for="size-2">M</label>
+          <label for="size-3">L</label>
+        </div>
         <button class="btn  btn--green" type="submit">Добавить</button>
       </form>
     </section>
+    <div class="modal-overlay"></div>
+    <script>
+    var navMain = document.querySelector(".main-nav");
+    var navToggle = document.querySelector(".main-nav__toggle");
+
+    navMain.classList.remove("main-nav--nojs");
+
+    navToggle.addEventListener("click", function() {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+      } else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+      }
+    });
+    </script>
   </body>
 </html>

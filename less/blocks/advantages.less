@@ -1,47 +1,106 @@
-.advantages {
-  outline: 2px solid pink;
-}
-
 .advantages__wrapper {
   .container();
-  min-height: 850px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  color: @title-color;
 }
 
 .advantages__list {
   .list();
+  font-size: 17px;
+  line-height: 1.2em;
+  font-weight: 700;
+
+  color: @title-color;
 }
 
 .advantages__item {
-  padding-top: 80px;
+  position: relative;
+
+  margin-bottom: 30px;
+  padding-top: 53px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 55px;
+    height: 38px;
+
+    border: 1px solid red;
+  }
+
+  &--flower {
+    background: url("../img/icon-feature-1.svg") no-repeat 3.461% top;
+  }
+
+  &--rectangle {
+    background: url("../img/icon-feature-3.svg") no-repeat;
+  }
 }
 
 @media @tablet-widths {
 
   .advantages__wrapper {
-    padding-top: 50px;
-    min-height: 638px;
+    padding-top: 48px;
+    padding-bottom: 26px;
   }
 
   .advantages__title {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .advantages__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 500px;
+
+    font-size: 20px;
   }
 
   .advantages__item {
-    padding-top: 60px;
-    margin-bottom: 45px;
+    margin-bottom: 54px;
     width: 50%;
-}
+
+    &--flower {
+      order: 1;
+    }
+
+    &--rectangle {
+      order: 3;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--clew {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
+  }
 
 }
 
@@ -49,8 +108,19 @@
 
   .advantages__wrapper {
     padding-top: 60px;
-    min-height: 658px;
+    padding-bottom: 32px;
+  }
 
+  .advantages__title {
+    padding-left: 16.666667%;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__list {
+    padding-left: 16.666667%;
+    padding-right: 16.666667%;
   }
 
 }

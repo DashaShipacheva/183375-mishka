@@ -1,9 +1,35 @@
-.inner-page {
+.inner-page .header-wrapper {
+  margin-bottom: 24px;
+}
 
-  p {
-    margin: 0;
-    padding: 0;
-    padding-top: 1px;
-    .container();
+.inner-page__intro {
+  .container();
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media @tablet-widths {
+
+  .inner-page__intro {
+    padding-top: 48px;
+    margin-bottom: 75px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
+}
+
+@media @desktop-widths {
+
+  .inner-page__intro {
+    width: 60.666667%;
+    padding-top: 0;
+    margin: 0 auto;
+    margin-top: 122px;
+    margin-bottom: 75px;
+  }
+
 }
