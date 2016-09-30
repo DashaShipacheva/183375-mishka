@@ -60,8 +60,9 @@
   }
 
   &::before {
-    transform: rotate(45deg);
     box-shadow: none;
+
+    transform: rotate(45deg);
   }
 
   &::after {
@@ -71,13 +72,14 @@
 
 .main-nav__list {
   .list();
+
   font-weight: 700;
 
   background-color: #ffffff;
-}
 
-.main-nav__list--3 {
-  display: none;
+  &--3 {
+    display: none;
+  }
 }
 
 .main-nav__item a {
@@ -221,9 +223,9 @@
   }
 
   .main-nav__item--search a {
-    padding: 0;
-    height: 89px;
     width: 82px;
+    height: 89px;
+    padding: 0;
 
     font-size: 0;
   }

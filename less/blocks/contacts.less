@@ -1,9 +1,6 @@
 .contacts__wrapper {
-
   padding-top: 38px;
 }
-
-
 
 .contacts__title {
   margin: 0;
@@ -42,6 +39,7 @@
     display: inline-block;
     padding-bottom: 1px;
 
+    vertical-align: top;
     text-decoration: none;
     color: @body-color;
 
@@ -159,7 +157,10 @@
     font-size: 17px;
 
     tr {
+      display: block;
       width: 50%;
+
+      box-sizing: border-box;
     }
   }
 
@@ -188,9 +189,9 @@
   }
 
   .contacts__wrapper {
+    width: 525px;
     padding: 0;
     padding-top: 60px;
-    width: 525px;
   }
 
   .contacts__title {
@@ -226,9 +227,9 @@
   }
 
   .contacts__map {
+    width: 525px;
     margin-top: 68px;
     margin-bottom: 0;
-    width: 525px;
   }
 
   .contacts__btn-wrapper {

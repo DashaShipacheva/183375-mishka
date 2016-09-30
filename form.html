@@ -12,10 +12,10 @@
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <a class="logo"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+          <a class="logo" href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
           <ul class="main-nav__list  main-nav__list--1">
             <li class="main-nav__item  main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item  main-nav__item--form"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item  main-nav__item--form"><a>Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list  main-nav__list--2">
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -37,7 +37,7 @@
       чтобы уточнить детали.</p>
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
         <section class="order-form__item">
-          <span><h2 class="order-form__title">Тип</h2></span>
+          <div class="order-form__title"><h2>Тип</h2></div>
           <ul class="order-form__list  order-form__list--column">
             <li>
               <input class="order-form__type-radio" type="radio" name="type" id="type-1" value="accessory" checked>
@@ -50,7 +50,7 @@
           </ul>
         </section>
         <section class="order-form__item">
-          <span><h2 class="order-form__title">Цвет</h2></span>
+          <div class="order-form__title"><h2>Цвет</h2></div>
           <ul class="order-form__list  order-form__list--grey-bg">
             <li>
               <input class="order-form__type-checkbox" type="checkbox" name="white" id="color-1" checked>
@@ -79,7 +79,7 @@
           </ul>
         </section>
         <section class="order-form__item">
-          <span><h2 class="order-form__title">ФИО</h2></span>
+          <div class="order-form__title"><h2>ФИО</h2></div>
           <ul class="order-form__list  order-form__list--name">
             <li>
               <label class="order-form__label" for="name">Имя:</label>
@@ -96,17 +96,17 @@
           </ul>
         </section>
         <section class="order-form__item  order-form__item--grey">
-          <span><h2 class="order-form__title">Тел</h2></span>
+          <div class="order-form__title"><h2>Тел</h2></div>
           <label class="visually-hidden" for="tel">Телефон:</label>
           <input class="order-form__type-text  order-form__type-text--tel" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ХХХ ХХ ХХ">
         </section>
         <section class="order-form__item  order-form__item--grey">
-          <span><h2 class="order-form__title">E-mail</h2></span>
+          <div class="order-form__title"><h2>E-mail</h2></div>
           <label class="visually-hidden" for="email">E-mail:</label>
           <input class="order-form__type-text  order-form__type-text--email" type="email" id="email" name="email" placeholder="Ваш Email">
         </section>
         <section class="order-form__item">
-          <span><h2 class="order-form__title  order-form__title--lower">Доп</h2></span>
+          <div class="order-form__title  order-form__title--lower"><h2>Доп</h2></div>
           <textarea class="order-form__extra-field" id="extra" name="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </section>
         <div class="order-form__wrapper">

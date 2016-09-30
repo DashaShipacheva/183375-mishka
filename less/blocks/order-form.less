@@ -12,18 +12,6 @@
   }
 }
 
-.order-form__title {
-  margin: 0;
-  padding-right: 10.384615%;
-
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-
-  color: #63d1bb;
-  text-transform: uppercase;
-}
-
 .order-form__type-radio {
   display: none;
 
@@ -68,6 +56,7 @@
       height: 16px;
 
       background-color: #62d1ba;
+
       transform: scale(0);
       transition: transform 0.18s;
     }
@@ -147,7 +136,6 @@
 }
 
 .order-form__list--name {
-
   li {
     margin-bottom: 22px;
 
@@ -202,19 +190,31 @@
   }
 }
 
-.order-form__item span {
-    margin-bottom: 28px;
+.order-form__title {
+  margin-bottom: 28px;
+
+  h2 {
+    margin: 0;
+    padding-right: 10.384615%;
+
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
 }
 
-.order-form__item--grey span {
+.order-form__item--grey .order-form__title {
   margin-bottom: 13px;
 }
 
 .order-form__extra-field {
-  padding-top: 15px;
-  padding-left: 5.769231%;
   width: 92%;
   min-height: 120px;
+  padding-top: 15px;
+  padding-left: 5.769231%;
 
   font-size: 17px;
   line-height: 18px;
@@ -270,29 +270,28 @@ textarea::-ms-input-placeholder {
     .container();
   }
 
-  .order-form__item span {
-    display: block;
-
-    overflow: hidden;
-  }
-
   .order-form__title {
-    position: relative;
+    overflow: hidden;
 
-    display: inline;
+    h2 {
+      position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 13px;
-      left: 100%;
+      display: inline;
 
-      height: 1px;
-      width: 9999px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 100%;
 
-      background-color: #63d1bb;
+        height: 1px;
+        width: 9999px;
+
+        background-color: #63d1bb;
+      }
     }
   }
+
 }
 
 @media @tablet-widths {
@@ -327,9 +326,18 @@ textarea::-ms-input-placeholder {
     &--grey {
       background-color: @bg-color;
     }
+  }
 
-    span {
-      width: 25%;
+  .order-form__title {
+    width: 25%;
+
+    &--lower {
+      margin-top: 15px;
+    }
+
+    h2 {
+      padding-right: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -350,19 +358,30 @@ textarea::-ms-input-placeholder {
       font-size: 19px;
       line-height: 18px;
     }
-  }
 
-  .order-form__title {
-    padding-right: 0;
-    margin-bottom: 0;
+    &--grey-bg {
+      justify-content: space-between;
 
-    &--lower {
-      margin-top: 15px;
+      li {
+        width: 50%;
+        margin-bottom: 59px;
+
+        &:nth-child(odd) {
+          margin-right: 2.5%;
+        }
+
+        &:nth-child(even) {
+          width: 47.5%;
+        }
+
+        &:nth-child(n+3) {
+          margin-bottom: 59px;
+        }
+      }
     }
   }
 
   .order-form__type-radio {
-
     + .order-form__label {
       padding-left: 15.976048%;
 
@@ -388,7 +407,6 @@ textarea::-ms-input-placeholder {
   }
 
   .order-form__type-checkbox {
-
     + .order-form__label {
       padding-left: 33%;
       padding-top: 0;
@@ -419,29 +437,7 @@ textarea::-ms-input-placeholder {
     flex-grow: 1;
   }
 
-  .order-form__list--grey-bg {
-    justify-content: space-between;
-
-    li {
-      width: 50%;
-      margin-bottom: 59px;
-
-      &:nth-child(odd) {
-        margin-right: 2.5%;
-      }
-
-      &:nth-child(even) {
-        width: 47.5%;
-      }
-
-      &:nth-child(n+3) {
-        margin-bottom: 59px;
-      }
-    }
-  }
-
   .order-form__list--name {
-
     li {
       display: flex;
 
@@ -491,11 +487,11 @@ textarea::-ms-input-placeholder {
   }
 
   .order-form__extra-field {
+    width: auto;
+    min-height: 125px;
     padding: 0;
     padding-top: 13px;
     padding-left: 2.4%;
-    width: auto;
-    min-height: 125px;
 
     font-size: 19px;
   }
@@ -521,7 +517,6 @@ textarea::-ms-input-placeholder {
 @media @desktop-widths {
 
   .order-form__item {
-
     &:nth-of-type(3) {
       padding-top: 67px;
     }
@@ -529,59 +524,56 @@ textarea::-ms-input-placeholder {
     &:nth-of-type(6) {
       padding-bottom: 90px;
     }
-
-    span {
-      width: 16.666667%;
-    }
   }
 
   .order-form__title {
-    padding-right: 5%;
+    width: 16.666667%;
 
-    text-align: center;
+    h2 {
+      padding-right: 5%;
+
+      text-align: center;
+    }
   }
 
   .order-form__list {
     width: 83.333333%;
+
+    &--grey-bg {
+      justify-content: flex-start;
+
+      li {
+        width: 30%;
+        margin-bottom: 59px;
+
+        &:nth-child(3n) {
+          margin-right: 2.5%;
+        }
+
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+
+        &:nth-child(even) {
+          width: 30%;
+        }
+      }
+    }
   }
 
   .order-form__type-radio {
-
     + .order-form__label {
       padding-left: 9.142857%;
     }
   }
 
   .order-form__type-checkbox {
-
     + .order-form__label {
       padding-left: 30%;
     }
   }
 
-  .order-form__list--grey-bg {
-    justify-content: flex-start;
-
-    li {
-      width: 30%;
-      margin-bottom: 59px;
-
-      &:nth-child(3n) {
-        margin-right: 2.5%;
-      }
-
-      &:nth-child(odd) {
-        margin-right: 0;
-      }
-
-      &:nth-child(even) {
-        width: 30%;
-      }
-    }
-  }
-
   .order-form__list--name {
-
     li {
       width: 80%;
       margin-bottom: 40px;
@@ -596,34 +588,35 @@ textarea::-ms-input-placeholder {
 
   .order-form__type-text {
     padding-left: 2.571429%;
+
     box-sizing: border-box;
 
     &--tel {
       flex-grow: 0;
+      width: 66.7%;
       padding-left: 1.6%;
       padding-bottom: 13px;
-      width: 66.7%;
 
       background-position: 98.8% top;
     }
 
     &--email {
       flex-grow: 0;
+      width: 66.7%;
       margin-bottom: 67px;
       padding-left: 1.6%;
       padding-bottom: 13px;
-      width: 66.7%;
 
       background-position: 99.6% top;
     }
   }
 
   .order-form__extra-field {
+    width: 66.7%;
+    min-height: 142px;
     flex-grow: 0;
     padding-top: 13px;
     padding-left: 1.4%;
-    width: 66.7%;
-    min-height: 142px;
 
     box-sizing: border-box;
   }
@@ -635,7 +628,6 @@ textarea::-ms-input-placeholder {
     p {
       margin-top: 0;
       margin-bottom: 0;
-
     }
   }
 
