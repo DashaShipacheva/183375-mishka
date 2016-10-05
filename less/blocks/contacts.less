@@ -1,9 +1,6 @@
-.contacts__wrapper {
-  padding-top: 38px;
-}
-
 .contacts__title {
   margin: 0;
+  margin-top: 38px;
   margin-bottom: 25px;
 
   font-size: 18px;
@@ -81,6 +78,7 @@
   margin-bottom: 38px;
 
   background: #f3f1ea url("../img/map-mobile@1x.jpg") no-repeat;
+  background-size: 320px auto;
 }
 
 .contacts__map-pin {
@@ -112,27 +110,19 @@
 
 }
 
-@media @tablet-widths-only {
-
-  .contacts__wrapper {
-    .container();
-  }
-
-}
-
 @media @tablet-widths {
 
   .contacts__wrapper {
     display: flex;
     flex-direction: column;
     padding-bottom: 47px;
-    padding-top: 29px;
   }
 
   .contacts__title {
     position: relative;
 
-    margin-bottom: 50px;
+    margin-top: 65px;
+    margin-bottom: 48px;
     flex-grow: 1;
 
     font-size: 43px;
@@ -151,30 +141,45 @@
     }
   }
 
-  .contacts__table tbody {
-    display: flex;
+  .contacts__table {
+    margin-bottom: 58px;
 
-    font-size: 17px;
+    tbody {
+      display: flex;
 
-    tr {
-      display: block;
-      width: 50%;
+      font-size: 17px;
 
-      box-sizing: border-box;
+      tr {
+        display: block;
+        width: 50%;
+
+        box-sizing: border-box;
+      }
     }
   }
 
   .contacts__field {
-    padding-left: 22px;
+    padding-left: 25px;
     padding-bottom: 0;
   }
 
   .contacts__map {
     margin-bottom: 55px;
+
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-size: 768px auto;
   }
 
   .contacts__btn-wrapper {
     padding-bottom: 57px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1149px) {
+
+  .contacts__wrapper {
+    .container();
   }
 
 }
@@ -189,15 +194,15 @@
   }
 
   .contacts__wrapper {
-    width: 525px;
+    width: 50%;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 140px;
   }
 
   .contacts__title {
     flex-grow: 0;
     margin-left: 32.333333%;
-    margin-top: 79px;
+    margin-top: 0;
     margin-bottom: 49px;
 
     font-size: 53px;
@@ -210,6 +215,7 @@
   }
 
   .contacts__table {
+    width: auto;
     margin-left: 33.333333%;
 
     tbody {
@@ -223,17 +229,20 @@
 
   .contacts__field {
     padding-bottom: 28px;
-    padding-left: 25px;
+    padding-left: 26px;
   }
 
   .contacts__map {
-    width: 525px;
-    margin-top: 68px;
+    width: 50%;
+    margin-top: 70px;
     margin-bottom: 0;
+
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-size: 525px 457px;
   }
 
   .contacts__btn-wrapper {
-    width: 525px;
+    width: 50%;
     margin: 0;
     margin-top: -52px;
     padding-right: 0;

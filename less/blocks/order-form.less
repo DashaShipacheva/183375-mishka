@@ -181,12 +181,38 @@
     margin-bottom: 32px;
 
     background: url("../img/icon-phone.svg") no-repeat 96.5% top;
+
+    &:hover {
+      background-image: url("../img/icon-phone-green.svg");
+    }
+
+    &:focus,
+    &:active {
+      background-image: url("../img/icon-phone-green.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon-phone.svg");
+    }
   }
 
   &--email {
     margin-bottom: 25px;
 
     background: url("../img/icon-mail.svg") no-repeat 97.8% top;
+
+    &:hover {
+      background-image: url("../img/icon-mail-green.svg");
+    }
+
+    &:focus,
+    &:active {
+      background-image: url("../img/icon-mail-green.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon-mail.svg");
+    }
   }
 }
 
@@ -211,8 +237,8 @@
 }
 
 .order-form__extra-field {
-  width: 92%;
-  min-height: 120px;
+  width: 100%;
+  min-height: 140px;
   padding-top: 15px;
   padding-left: 5.769231%;
 
@@ -222,6 +248,8 @@
   color: @body-color;
   outline: none;
   border: 2px solid @body-color;
+
+  box-sizing: border-box;
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -249,18 +277,8 @@
   }
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  opacity: 0.3;
-}
-
-input::-moz-input-placeholder,
-textarea::-moz-input-placeholder {
-  opacity: 0.3;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
+input::placeholder,
+textarea::placeholder {
   opacity: 0.3;
 }
 
@@ -297,7 +315,6 @@ textarea::-ms-input-placeholder {
 @media @tablet-widths {
 
   .order-form__item {
-    .container();
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -488,7 +505,7 @@ textarea::-ms-input-placeholder {
 
   .order-form__extra-field {
     width: auto;
-    min-height: 125px;
+    min-height: 142px;
     padding: 0;
     padding-top: 13px;
     padding-left: 2.4%;
@@ -504,7 +521,7 @@ textarea::-ms-input-placeholder {
     p {
       order: 2;
       align-self: center;
-      margin-top: 0;
+      margin-top: -5px;
       margin-bottom: 0;
 
       font-size: 17px;
@@ -514,9 +531,20 @@ textarea::-ms-input-placeholder {
 
 }
 
+@media (min-width: 768px) and (max-width: 1149px) {
+
+  .order-form__item {
+    .container();
+  }
+
+}
+
 @media @desktop-widths {
 
   .order-form__item {
+    padding: 0 4.347826%;
+    margin: 0 auto;
+
     &:nth-of-type(3) {
       padding-top: 67px;
     }
@@ -607,7 +635,7 @@ textarea::-ms-input-placeholder {
       padding-left: 1.6%;
       padding-bottom: 13px;
 
-      background-position: 99.6% top;
+      background-position: 99.3% top;
     }
   }
 
@@ -617,8 +645,6 @@ textarea::-ms-input-placeholder {
     flex-grow: 0;
     padding-top: 13px;
     padding-left: 1.4%;
-
-    box-sizing: border-box;
   }
 
   .order-form__wrapper {
