@@ -24,6 +24,10 @@
   width: 100%;
   height: 195px;
   margin: 0;
+
+  text-align: center;
+
+  background-color: #e5e5e5;
 }
 
 .catalog-item__content {
@@ -103,8 +107,22 @@
 
   font-size: 0;
 
-  background: url("../img/icon-cart.svg") no-repeat;
-  opacity: 0.2;
+  svg {
+    opacity: 0.2;
+  }
+
+  &:hover {
+    svg {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .catalog-item__intro {
@@ -145,8 +163,44 @@
 }
 
 .catalog-item__video {
+  position: relative;
+
   width: 100%;
+  height: 150px;
   margin-bottom: 27px;
+
+  text-align: center;
+
+  background-color: #e4e4e4;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 102px;
+    height: 78px;
+    margin-top: -39px;
+    margin-left: -51px;
+
+    &:hover {
+      width: 123px;
+      height: 94px;
+      margin-top: -47px;
+      margin-left: -61px;
+
+      transition: all 0.1s;
+    }
+
+    &:active {
+      width: 81px;
+      height: 62px;
+      margin-top: -31px;
+      margin-left: -40px;
+
+      opacity: 0.3;
+    }
+  }
 }
 
 @media @tablet-widths {
@@ -182,7 +236,7 @@
   }
 
   .catalog-item__title {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     h2 {
       font-size: 20px;
@@ -207,11 +261,14 @@
 
   .catalog-item__video {
     order: -1;
-    width: 100%;
     height: 455px;
     margin-bottom: 37px;
 
     border-bottom: @border;
+
+    svg {
+      margin-top: -32px;
+    }
   }
 
   .catalog-item__title-video {
@@ -295,11 +352,17 @@
   }
 
   .catalog-item__video {
-    width: 68.8%;
+    width: 682px;
     margin-right: 8%;
     margin-bottom: 0;
 
     border-bottom: none;
+
+    svg {
+      width: 101px;
+      margin-top: -39px;
+      margin-left: -42px;
+    }
   }
 
   .catalog-item__title-video {
