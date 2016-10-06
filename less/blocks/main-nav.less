@@ -15,6 +15,7 @@
   display: block;
   width: 20px;
   height: 20px;
+  padding: 0;
 
   font-size: 0;
 
@@ -41,18 +42,15 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 32px;
-  right: 9.375%;
-
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    right: -1px;
+    top: 6px;
+    right: -2px;
 
-    width: 22px;
-    height: 2px;
+    width: 25px;
+    height: 3px;
 
     background-color: #221f1f;
 
