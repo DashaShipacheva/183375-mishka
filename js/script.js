@@ -51,3 +51,20 @@ if (popup && popupOpen) {
   });
 }
 
+function initMap() {
+  var mapCanvas = document.getElementById("map");
+  var myLatLng = new google.maps.LatLng(59.936148, 30.322917);
+  var mapOptions = {
+    center: myLatLng,
+    zoom: 16,
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  var image = "img/icon-map-pin.svg";
+  var beachMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image
+  });
+}
+
