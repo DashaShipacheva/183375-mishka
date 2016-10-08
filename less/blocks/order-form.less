@@ -475,10 +475,6 @@ textarea::placeholder {
     }
   }
 
-  .order-form__wrapper {
-    .container();
-  }
-
   .order-form__type-text {
     width: auto;
     padding-top: 0;
@@ -516,7 +512,6 @@ textarea::placeholder {
   .order-form__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 52px;
 
     p {
       order: 2;
@@ -535,6 +530,11 @@ textarea::placeholder {
 
   .order-form__item {
     .container();
+  }
+
+  .order-form__wrapper {
+    .container();
+    margin-bottom: 52px;
   }
 
 }
@@ -575,7 +575,7 @@ textarea::placeholder {
         margin-bottom: 59px;
 
         &:nth-child(3n) {
-          margin-right: 2.5%;
+          margin-left: 0.3%;
         }
 
         &:nth-child(odd) {
@@ -649,6 +649,7 @@ textarea::placeholder {
 
   .order-form__wrapper {
     width: 61%;
+    margin-left: 19.6%;
     margin-bottom: 95px;
 
     p {
