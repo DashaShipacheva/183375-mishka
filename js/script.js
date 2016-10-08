@@ -52,19 +52,20 @@ if (popup && popupOpen) {
 }
 
 function initMap() {
-  var mapCanvas = document.getElementById("map");
   var myLatLng = new google.maps.LatLng(59.936148, 30.322917);
   var mapOptions = {
     center: myLatLng,
     zoom: 16,
-  }
-  var map = new google.maps.Map(mapCanvas, mapOptions);
+  };
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-  var image = "img/icon-map-pin.svg";
-  var beachMarker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    icon: image
+    icon: "img/icon-map-pin.svg"
   });
 }
+google.maps.event.addDomListener(window, "load", initMap);
+
+
 
