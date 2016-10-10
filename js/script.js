@@ -14,40 +14,28 @@ navToggle.addEventListener("click", function() {
 });
 
 var cartPopup = document.querySelector(".modal");
+var cartOpen = document.querySelector(".btn--js");
+var popup = document.querySelectorAll(".catalog-item__cart-icon");
 
-if (cartPopup) {
-  var cartOpen = document.querySelector(".btn--js");
+if (cartOpen) {
   cartOpen.addEventListener("click", function(event) {
     event.preventDefault();
     cartPopup.classList.add("modal__show");
   });
-
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-      if (cartPopup.classList.contains("modal__show")) {
-        cartPopup.classList.remove("modal__show");
-      }
-    }
-  });
 }
 
-var popup = document.querySelectorAll(".catalog-item__cart-icon");
-var popupOpen = document.querySelector(".modal");
-
-if (popup && popupOpen) {
-  for (var i = 0; i < popup.length; i++) {
-    popup[i].addEventListener("click", function(event) {
-      event.preventDefault();
-      popupOpen.classList.add("modal__show");
-    });
-  }
-
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-      if (popupOpen.classList.contains("modal__show")) {
-        popupOpen.classList.remove("modal__show");
-      }
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (cartPopup.classList.contains("modal__show")) {
+      cartPopup.classList.remove("modal__show");
     }
+  }
+});
+
+for (var i = 0; i < popup.length; i++) {
+  popup[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    cartPopup.classList.add("modal__show");
   });
 }
 
@@ -65,7 +53,9 @@ function initMap() {
     icon: "img/icon-map-pin.svg"
   });
 }
-google.maps.event.addDomListener(window, "load", initMap);
+if (document.querySelector("#map")) {
+  google.maps.event.addDomListener(window, "load", initMap);
+}
 
 
 
