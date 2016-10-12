@@ -80,7 +80,7 @@
   }
 }
 
-.main-nav__item a {
+.main-nav__link {
   display: block;
   padding: 27px 0;
   padding-left: 23%;
@@ -111,8 +111,8 @@
   }
 }
 
-.main-nav__item--search a,
-.main-nav__item--cart a {
+.main-nav__link--search,
+.main-nav__link--cart {
   position: relative;
 
   svg {
@@ -187,13 +187,13 @@
       order: -2;
     }
 
-    &--2 a {
+    &--2 .main-nav__link {
       border-left: @border;
     }
+  }
 
-    a {
-      border-bottom: none;
-    }
+  .main-nav__link {
+    border-bottom: none;
   }
 
   .main-nav__toggle {
@@ -205,15 +205,15 @@
     display: none;
   }
 
-  .main-nav__item--search a,
-  .main-nav__item--cart a {
+  .main-nav__link--search,
+  .main-nav__link--cart {
     svg {
       top: 35px;
       left: 40%;
     }
   }
 
-  .main-nav__item--search a {
+  .main-nav__link--search {
     width: 82px;
     height: 89px;
     padding: 0;
@@ -221,7 +221,7 @@
     font-size: 0;
   }
 
-  .main-nav__item--cart a {
+  .main-nav__link--cart {
     padding: 32px 0;
     padding-left: 82px;
 
@@ -238,7 +238,7 @@
 
     background-color: transparent;
 
-    a {
+    .main-nav__link {
       padding: 0;
       padding-top: 19px;
 
@@ -250,6 +250,10 @@
 
   .main-nav__list--1 {
     left: 6.510%;
+
+    .main-nav__link--catalog {
+      padding-right: 35px;
+    }
   }
 
   .main-nav__list--3 {
@@ -257,13 +261,9 @@
 
     justify-content: flex-end;
 
-    a {
+    .main-nav__link {
       font-weight: 400;
     }
-  }
-
-  .main-nav__item--catalog a {
-    padding-right: 35px;
   }
 
 }
@@ -277,7 +277,7 @@
       order: -3;
     }
 
-    &--1 a {
+    &--1 .main-nav__link {
       padding: 32px 0;
 
       font-size: 17px;
@@ -297,21 +297,23 @@
     }
   }
 
-  .main-nav__item--catalog a {
+  .main-nav__list--1 {
+    .main-nav__link--catalog {
     padding-right: 35px;
 
     border-right: @border;
-  }
+    }
 
-  .main-nav__item--form a {
-    padding-left: 35px;
+    .main-nav__link--form {
+      padding-left: 35px;
+    }
   }
 
   .main-nav__item--new-goods,
   .main-nav__item--sale {
     display: block;
 
-    a {
+    .main-nav__link {
       margin-right: 61px;
 
       font-weight: 700;
