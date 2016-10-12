@@ -44,10 +44,10 @@
     padding-bottom: 35px;
 
     transform: scaleY(1.05);
+  }
 
-    svg {
-      opacity: 0.7;
-    }
+  &:hover svg {
+    opacity: 0.7;
   }
 
   &:active {
@@ -57,60 +57,60 @@
     color: rgba(255, 255, 255, 0.3);
 
     transform: scaleY(1);
+  }
 
-    svg {
-      opacity: 0.3;
-    }
+  &:active svg {
+    opacity: 0.3;
   }
 
   &--interior-icon {
     background-color: #63d1bb;
+  }
 
-    svg {
-      top: 23px;
-      right: 11.5625%;
-    }
+  &--interior-icon:hover {
+    background-color: #59d5bc;
+  }
 
-    &:hover {
-      background-color: #59d5bc;
+  &--interior-icon:active {
+    background-color: #59d5bc;
+  }
 
-      svg {
-        top: 18px;
-      }
-    }
+  &--interior-icon svg {
+    top: 23px;
+    right: 11.5625%;
+  }
 
-    &:active {
-      background-color: #59d5bc;
+  &--interior-icon:hover svg {
+    top: 18px;
+  }
 
-      svg {
-        top: 23px;
-      }
-    }
+  &--interior-icon:active svg {
+    top: 23px;
   }
 
   &--toy-icon {
     background-color: #56c3b2;
+  }
 
-    svg {
-      top: 20px;
-      right: 9.125%;
-    }
+  &--toy-icon:hover {
+    background-color: #46c1ae;
+  }
 
-    &:hover {
-      background-color: #46c1ae;
+  &--toy-icon:active {
+    background-color: #46c1ae;
+  }
 
-      svg {
-        top: 15px;
-      }
-    }
+  &--toy-icon svg {
+    top: 20px;
+    right: 9.125%;
+  }
 
-    &:active {
-      background-color: #46c1ae;
+  &--toy-icon:hover svg {
+    top: 15px;
+  }
 
-      svg {
-        top: 20px;
-      }
-    }
+  &--toy-icon:active svg {
+    top: 20px;
   }
 }
 
@@ -183,42 +183,30 @@
       padding-bottom: 33px;
     }
 
-    &--interior-icon {
-      svg {
-        top: 30px;
-        right: 10.778443%;
-      }
-
-      &:hover {
-        svg {
-          top: 25px;
-        }
-      }
-
-      &:active {
-        svg {
-          top: 30px;
-        }
-      }
+    &--interior-icon svg {
+      top: 30px;
+      right: 10.778443%;
     }
 
-    &--toy-icon {
-      svg {
-        top: 31px;
-        right: 9.880240%;
-      }
+    &--interior-icon:hover svg {
+      top: 25px;
+    }
 
-      &:hover {
-        svg {
-          top: 26px;
-        }
-      }
+    &--interior-icon:active svg {
+      top: 30px;
+    }
 
-      &:active {
-        svg {
-          top: 31px;
-        }
-      }
+    &--toy-icon svg {
+      top: 31px;
+      right: 9.880240%;
+    }
+
+    &--toy-icon:hover svg {
+      top: 26px;
+    }
+
+    &--toy-icon:active svg {
+      top: 31px;
     }
   }
 
@@ -254,16 +242,12 @@
   .categories__item {
     padding-left: 3.614286%;
 
-    &--interior-icon {
-      svg {
-        right: 6.857143%;
-      }
+    &--interior-icon svg {
+      right: 6.857143%;
     }
 
-    &--toy-icon {
-      svg {
-        right: 6.666667%;
-      }
+    &--toy-icon svg {
+      right: 6.666667%;
     }
   }
 
